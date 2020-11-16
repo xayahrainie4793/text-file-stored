@@ -1,0 +1,8 @@
+a1(n)=for(k=1,2^24,if(ispseudoprime((n-1)*n^k-1),return(k)))
+a2(n)=for(k=1,2^24,if(ispseudoprime((n-1)*n^k+1),return(k)))
+a3(n)=for(k=1,2^24,if(ispseudoprime((n+1)*n^k-1),return(k)))
+a4(n)=if(n%3==1, "-", for(k=1,2^24,if(ispseudoprime((n+1)*n^k+1),return(k))))
+a5(n)=for(k=1,2^24,if(ispseudoprime(n^k-(n-1)),return(k)))
+a6(n)=for(k=1,2^24,if(ispseudoprime(n^k+(n-1)),return(k)))
+a7(n)=for(k=1,2^24,if(ispseudoprime(n^k-(n+1)),return(k)))
+a8(n)=if(n%3==1, "-", for(k=1,2^24,if(ispseudoprime(n^k+(n+1)),return(k))))
