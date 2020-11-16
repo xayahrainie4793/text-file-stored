@@ -1,0 +1,5 @@
+a(n)=for(k=1,length(digits(n,12)),print1(["0","1","2","3","4","5","6","7","8","9","X","E"][digits(n,12)[k]+1]))
+d(n)=if(n==0,print1("0"),a(n))
+b(n)=print1("!");d(12*(n-1));print1("+");print();for(k=1,12,print1("||");d(x[12*(n-1)+k]));print();if(n%12,print1("|-"),print1("|}"));print()
+c(n)=print1("== ");a(144*(n-1)+1);print1(" to ");a(144*n);print1(" ==");print();print();print1("{|class=\"wikitable\"");print();print1("!");print();for(k=1,12,if(k==1,print1("!"),print1("!!"));print1("+");a(k));print();print1("|-");print();for(k=1,12,b(12*(n-1)+k));print()
+for(k=1,12,c(k))

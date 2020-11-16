@@ -1,0 +1,23 @@
+The power-of-2 bases are more interesting, should we extend the power-of-2 bases to 2^16?
+
+Sierpinski:
+
+Code:
+base  CK
+2048  334
+4096  1206
+8192  83
+16384 114
+32768 10
+65536 1221
+
+Riesel:
+
+Code:
+base  CK
+2048  29
+4096  5264
+8192  28
+16384 59
+32768 10
+65536 6015

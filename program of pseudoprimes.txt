@@ -1,0 +1,7 @@
+is1(n,k)=(Mod(n,k)^k==Mod(n,k))
+is2(n,k)=(Mod(n,k)^(k-1)==Mod(1,k))
+is3(n,k)=(k%2 && (Mod(n,k)^((k-1)/2)==Mod(1,k) || Mod(n,k)^((k-1)/2)==Mod(-1,k)))
+is4(n,k)=(k%2 && gcd(k,n)==1 && (Mod(n,k)^((k-1)/2)==Mod(kronecker(n,k),k)))
+is5(k,n)={ bittest(n, 0) || return; ispseudoprime(n) && return; my(d=(n-1)>>valuation(n-1, 2)); Mod(k, n)^d==1 || until(n-1<=d*=2, Mod(k, n)^d+1 || return(1))}
+a(n)=forcomposite(k=2,2^16,if(is5(n,k),print1("<span style=\"color:#FF0000;\">", k, "</span>", ", "),if(is4(n,k),print1("<span style=\"color:#FFFF00;\">", k, "</span>", ", "),if(is3(n,k),print1("<span style=\"color:#00FF00;\">", k, "</span>", ", "),if(is2(n,k),print1(k, ", "),if(is1(n,k),print1("<span style=\"color:#0000FF;\">", k, "</span>", ", ")))))))
+b(k)=for(n=0,k-1,if(is5(n,k),print1("<span style=\"color:#FF0000;\">", n, "</span>", ", "),if(is4(n,k),print1("<span style=\"color:#FFFF00;\">", n, "</span>", ", "),if(is3(n,k),print1("<span style=\"color:#00FF00;\">", n, "</span>", ", "),if(is2(n,k),print1(n, ", "),if(is1(n,k),print1("<span style=\"color:#0000FF;\">", n, "</span>", ", ")))))))

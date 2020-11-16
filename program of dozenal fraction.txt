@@ -1,0 +1,8 @@
+a(n)=for(k=1,length(digits(n,12)),print1(["0","1","2","3","4","5","6","7","8","9","X","E"][digits(n,12)[k]+1]))
+aa(n)=if(n==0,print1("0"),a(n))
+b(n)=3^valuation(n, 3)<<valuation(n, 2)
+bb(n)=for(k=0,n,if((12^k)%b(n)==0,return(k)))
+c(n)=n/b(n)
+cc(n)=for(k=1,n,if((12^k)%c(n)==1,return(k)))
+d(n,r)=for(k=1,r-length(digits(n,12)),print1("0"));for(k=max(1,1-r+length(digits(n,12))),length(digits(n,12)),print1(["0","1","2","3","4","5","6","7","8","9","X","E"][digits(n,12)[k]+1]))
+f(m,n)=aa(m\n);if(m%n,print1(".");for(k=1,min(length(digits(n-1,12))-1,bb(n)),print1("0"));a(floor((m%n)/n*12^bb(n/gcd(m,n))));if(cc(n/gcd(m,n))>1,print1("<span style=\"color:red;\">");d(floor((m%n)/n*12^(bb(n/gcd(m,n))+cc(n/gcd(m,n)))),cc(n/gcd(m,n)));print1("</span>")))

@@ -1,0 +1,27 @@
+* unitary nontotient numbers (cf. A047994, A005277, A135347)
+* a(0)=0, a(1)=1, for n>1, a(n)=sigma(a(n-1))-a(n-1) if it is currently not in this sequence, otherwise a(n)=the smallest number currently not in this sequence
+* Square array: A(m,n) is the number of cycles of the Kapakar maps of n-digit base m numbers.
+* Square array: A(m,n) is the smallest number whose nth power is the sum of m positive nth powers (or 0 if no such number exists).
+* If n = 10*m+d with 0<=d<=9, a(n) = largest k such that m^k does not contain the digit d (or -1 if no such k extsts).
+* Numbers k such that 2*12^k-1 is prime.
+* Smallest prime which is the concatenation of first k numbers in base n for some k.
+* Smallest k such that the concatenate next digit at right hand end in base n (where the next digit after n-1 is again 0) is prime.
+* Smallest n-Fibonacci pseudoprime.
+* Smallest solution of z of x^3+y^3=n*z^3 which x,y,z>0, x!=y (0 if no solution exists).
+* Smallest solution of z of x^4+y^4=n*z^4 which x,y,z>0, x!=y (0 if no solution exists).
+* (Numerator and de.. of) Smallest solution of z of x^2+y^2=z^2 and xy/2=n.
+* Smallest solution of (x,y,z) such that x^3+y^3+z^3=n such that ... (0 if no solution exists).
+* Numbers whose bijective base 26 (with A=1, B=2, ..., Z=26) is a word.
+* Row n list the possible residue of even perfect number mod n.
+* The melting point (boiling point) of n-th chamical element in Kelvin (rounded to nearest integer).
+* The density of n-th chamical element in kg/m^3 (rounded to nearest integer).
+* The year which n-th chamical element was found.
+* Conway's game of life (similar to Aliquot sequence) as below (Ulam spiral):
+
+   2^30 2^29 2^28 2^27 2^26 2^25 2^48
+   2^31 2^12 2^11 2^10 2^ 9 2^24 2^47
+   2^32 2^13 2^ 2 2^ 1 2^ 8 2^23 2^46
+   2^33 2^14 2^ 3 2^ 0 2^ 7 2^22 2^45
+   2^34 2^15 2^ 4 2^ 5 2^ 6 2^21 2^44
+   2^35 2^16 2^17 2^18 2^19 2^20 2^43
+   2^36 2^37 2^38 2^39 2^40 2^41 2^42

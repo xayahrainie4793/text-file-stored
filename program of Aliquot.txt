@@ -1,0 +1,1 @@
+b(a)=print1(a, ", ");for(i=1, +oo, if(a != 0 && a != sigma(a)-a,a=sigma(a)-a; print1(a, ", "), return()))

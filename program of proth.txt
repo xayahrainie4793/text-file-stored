@@ -1,0 +1,5 @@
+a(n)=for(k=1,4096,if(ispseudoprime((2*n+1)*2^k+1),return(k)))
+b(n)=for(k=1,4096,if(ispseudoprime((2*n+1)*2^k-1),return(k)))
+c(n)=for(k=1,4096,if(ispseudoprime(2^k+(2*n+1)),return(k)))
+d(n)=for(k=1,4096,if(ispseudoprime(abs(2^k-(2*n+1))),return(k)))
+r(n)=print1("|", 2*n+1);print1("||", a(n));print1("||", b(n));print1("||", c(n));print1("||", d(n));print();print1("|-");print()

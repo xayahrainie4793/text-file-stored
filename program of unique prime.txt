@@ -1,0 +1,19 @@
+is(n,k)=ispseudoprime(polcyclo(n,k))
+
+iss(n,k)=if(n != 2, ispseudoprime((polcyclo(n,k))/gcd(polcyclo(n,k),n)), ispseudoprime((k+1)>>valuation(k+1,2)))
+
+isss(n,k)=isprimepower(polcyclo(n,k))
+
+issss(n,k)=if(n != 2, isprimepower((polcyclo(n,k))/gcd(polcyclo(n,k),n)), isprimepower((k+1)>>valuation(k+1,2)))
+
+a(n,k)=(gcd(polcyclo(n,k),n)==1) && is(n,k)
+
+b(n,k)=(gcd(polcyclo(n,k),n)!=1) && iss(n,k)
+
+c(n,k)=(gcd(polcyclo(n,k),n)==1) && isss(n,k)
+
+d(n,k)=(gcd(polcyclo(n,k),n)!=1) && issss(n,k)
+
+e(n)=for(k=2,2500,if(a(n,k), print1(k, ", "), if(c(n,k), print1(k, "**, ")));if(b(n,k), print1(k, "*, "), if(d(n,k), print1(k, "***, "))))
+
+f(k)=for(n=1,2500,if(a(n,k), print1(n, ", "), if(c(n,k), print1(n, "**, ")));if(b(n,k), print1(n, "*, "), if(d(n,k), print1(n, "***, "))))

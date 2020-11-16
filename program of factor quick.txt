@@ -1,0 +1,4 @@
+a(n)=for(k=1,length(digits(n,12)),print1(["0","1","2","3","4","5","6","7","8","9","X","E"][digits(n,12)[k]+1]))
+bb(n, o=[1])=if(n>1, concat(apply(t->vector(t[2], i, t[1]), Vec(factor(n)~))), o)
+b(n)=for(k=1,length(bb(n)),if(k>1,print1(" * "));a(bb(n)[k]))
+c(n)=if(n==1,print1("unit"),if(isprime(n),print1("prime"),b(n)))

@@ -1,0 +1,4 @@
+a(n)=my(s); while(n\=3, s+=n); s
+a(n,p)=my(s); while(n\=p, s+=n); s
+b(n,p)=for(k=1,omega(p),a(n,factor(p)[k,1])\factor(p)[k,2])
+b(n,p)=j=12^20736;for(k=1,omega(p),if(j>(i=a(n,factor(p)[k,1])\factor(p)[k,2]),j=i));j

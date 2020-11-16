@@ -1,0 +1,56 @@
+A305547: Smallest k such that the concatenation of first k numbers in base n is prime.
+A305548: Multiples of 27.
+A305549: Position of first letter of n-th minor planet (in English) in alphabet.
+A305550: Smallest k such that (n-1)*n^k-1 is prime.
+A305551: Numbers n such that (10^n+7^n)/17 is prime
+A305552: (for (11,6))
+A305553: (for (11,7))
+A305554: (for (11,8))
+A305555: (for (11,9))
+A305556: (for (12,7))
+A305557: Triangle read by rows: T(m,n) = smallest odd prime p such that (m^p+n^p)/(m+n) is prime (0<n<m), or 0 if no such p exists. (rifo A247093)
+A305558: Triangle read by rows: T(m,n) = the n-th term of the inverse of the m-th cyclotomic polynomial (1<=n<=m)
+A305559: Numbers k such that 2*12^k-1 is prime.
+A305560: Smallest k such that ((2*n)^k-1)^2-2 is prime.
+A305561: Smallest k such that ((2*n)^k+1)^2-2 is prime.
+A305562: Harshad numbers in base 12.
+A305563: Keith numbers in base 12.
+A305564: Smallest k such that the concatenate next digit at right hand end in base n (where the next digit after n-1 is again 0) is prime.
+A305565: Smallest k such that the concatenate next digit at right hand end in base n (without 0, where the next digit after n-1 is again 1) is prime.
+A305566: Smallest nonsquare number (or largest negative number) which is quadratic residue to mod 1 to n.
+A305567: Smallest nonsquare number (or largest negative number) coprime to 1 to n which is quadratic residue to mod 1 to n.
+A305568: Largest minimal prime in base n.
+A305569: Number of nonisomophic subgroups in n-th group in the A1...
+A305570: Irregular triangle read by rows: n-th row is the subgroups of n-th group in A1... (counted with mult.)
+A305571: Conjectured largest non-repunit permutable prime in base n.
+A305572: Conjectured largest non-repunit circular prime in base n.
+A305573: Square array: A(m,n) is the number of cycles of the Kapakar maps of n-digit base m numbers.
+A305574: Smallest k such that 3*(2*n)^k+1 is prime. (also 3*(2*n)^k-1, 2*n*5^k+1, 2*n*5^k-1, ...)
+A305575: Numbers whose bijective base 26 (with A=1, B=2, ..., Z=26) is a word.
+A305576: Smallest Chamical number (561, 1105, 1729...) which is multiple of 2*n+1.
+A305577: Cyclotomic polynomial at x=0.
+A305578: Row n list the possible residue of even perfect number mod n.
+A305579: Smallest n-Fibonacci pseudoprime.
+A305580: Smallest Euler (or Euler-Jacobi) pseudoprime to base n.
+A305581: Smallest prime p such that there exist a*x^2+b*x+p generated distince primes for x = 0 to n.
+A305582: Two persons divide a positive integer by a prime power (except 1), the person who get 1 win (or lose), sequence lists the n's such that the beginner will win (or lose).
+A305583: Two persons divide a positive integer by a power of a squarefree number (except 1), the person who get 1 win (or lose), sequence lists the n's such that the beginner will win (or lose).
+A305584: Let n = p1^r1*p2^r2*p3^r3*... (where p_i are distince primes), draw a side of the complete graph K_m with the primes, a(n) is the smallest m such that there is always a complete graph K_(r_i) with all sides drawn with p_i for some i.
+A305585: (rifo A095195) absolute value, Girburase conjecture.
+A305586: Smallest a such that there exists 1<=b<=a-1 such that (a^p-b^p)/(a-b) is prime, where p=prime(n).
+A305587: Smallest a such that there exists 1<=b<=a-1 such that (a^p+b^p)/(a+b) is prime, where p=prime(n).
+A305588: Numbers n such that all quadratic residue < n coprime to n are squares. (rifo. A018253, A254328)
+A305589: Number of d-dimentional polys with n cells (rifo A000105)
+A305590: If n = 10*m+d with 0<=d<=9, a(n) = largest k such that m^k does not contain the digit d.
+A305591: Smallest prime factor of 2^(2^p-1)-1, where p=prime(n).
+A305592: Irregular triangle read by rows: Row n is the Aliquot sequence of n (stop when reach 0 or perfect number). (Cf. A032451)
+A305593: LYM numbers.
+A305594: Base 2 biunique primes.
+A305595: Indices which A001175 (Pisano period) get a record.
+A305596: Records for A001175.
+A305597: Nonsemiprimes in A090086.
+A305598: Biunique primes in base 2.
+A305599: A305598 sorted by period.
+A305600: Period of the primes in A305598.
+
+(? number of stable isotopes with atomic number/mass number n)

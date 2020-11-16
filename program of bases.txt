@@ -1,0 +1,5 @@
+a(n,b)=if(n==0,print1("0"),for(k=1,length(digits(n,b)),print1(["0","1","2","3","4","5","6","7","8","9","X","E"][digits(n,b)[k]+1])))
+
+c(n,b)=if(n==0,print1("0"),for(k=1,length(digits(n,b)),a(digits(n,b)[k],12);if(k<length(digits(n,b)),print1(":"))))
+
+d(n,b)=if(b<=12,a(n,b),c(n,b))

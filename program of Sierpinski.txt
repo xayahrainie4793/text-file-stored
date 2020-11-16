@@ -1,0 +1,5 @@
+a(k,b)=for(n=1,2^12,if(ispseudoprime((k*b^n+1)/gcd(k+1,b-1)),return(n)))
+is(n)=forprime(p=2,50000,if(n%p==0,return(0)));1
+iss(k,b)=for(n=1,5000,if(is((k*b^n+1)/gcd(k+1,b-1)),return(0)));1
+isss(k,b)=forprime(r=3,16,if((ispower(4*k,4) && ispower(b,4)) || (ispower(k,r) && ispower(b,r)),return(1)));0
+c(k,b)=if(iss(k,b),"covering set",if(isss(k,b),"full algebra factors",a(k,b)))

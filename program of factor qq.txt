@@ -1,0 +1,2 @@
+a(n)=for(k=1,length(digits(n,12)),print1(["0","1","2","3","4","5","6","7","8","9","X","E"][digits(n,12)[k]+1]))
+b(n)=my(c=factor(n));for(k=1,length(c~),if(k>1,print1(" * "));a(c[k,1]);if(c[k,2]>1,print1("^");a(c[k,2])))

@@ -1,0 +1,5 @@
+a(n,k,b)=v=[];for(r=1,length(digits(n,b)),if(r+length(digits(k,2))-length(digits(n,b))>0 && digits(k,2)[r+length(digits(k,2))-length(digits(n,b))]==1,v=concat(v,digits(n,b)[r])));fromdigits(v,b)
+
+is(n,b)=for(k=1,2^length(digits(n,b))-2,if(ispseudoprime(a(n,k,b)),return(0)));1
+
+c(b)=forprime(p=2,2^64,if(is(p,b),print1(p, ", ")))

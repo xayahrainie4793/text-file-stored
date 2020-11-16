@@ -1,0 +1,1 @@
+is(n,k)=((Mod([k, 1; 1, 0], n))^(n-kronecker(k^2+4,n)))[1, 2]==0 && !isprime(n) && gcd(n,k^2+4)==1 && n>1

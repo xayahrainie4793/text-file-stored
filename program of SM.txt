@@ -1,0 +1,1 @@
+a(n,k)=if(k==1,1,a(n,k-1)*n^length(digits(k,n))+k)

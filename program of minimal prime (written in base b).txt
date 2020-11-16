@@ -1,0 +1,9 @@
+a(n,k,b)=v=[];for(r=1,length(digits(n,b)),if(r+length(digits(k,2))-length(digits(n,b))>0 && digits(k,2)[r+length(digits(k,2))-length(digits(n,b))]==1,v=concat(v,digits(n,b)[r])));fromdigits(v,b)
+
+g(n)=if(n<10,n+48,if(n<36,n+55,if(n<62,n+61,n-29)))
+
+f(n,b)=for(k=1,length(digits(n,b)),print1(Strchr(g(digits(n,b)[k]))))
+
+is(n,b)=for(k=1,2^length(digits(n,b))-2,if(ispseudoprime(a(n,k,b)),return(0)));1
+
+c(b)=forprime(p=2,2^64,if(is(p,b),f(p,b);print1(", ")))

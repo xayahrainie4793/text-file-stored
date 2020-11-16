@@ -1,0 +1,4 @@
+a(n) = forprime(p=2, n, if(#polrootsmod(polcyclo(n), p), return(p)))
+b(n) = for(k=0,a(n)-1,if(polcyclo(n,k)%(a(n))==0, print1(k, ", ")))
+c(n) = for(k=2,n,if(issquarefree(k) && (((k%4==1) && (n%(2*k)==k)) || ((k%4 != 1) && (n%(4*k)==2*k))), print1(k, "*k^2, ")))
+d(n) = print1("|", n, "||", "b = "); b(n); print1(" (mod ", a(n), ")", "||", "b = "); c(n)

@@ -1,0 +1,4 @@
+is(n)=forprime(p=2,50000,if(n%p==0,return(0)));1
+a(n,k,b)=(n*b^k+1)/gcd(n+1,b-1)
+b(n,r)=for(k=1,3000,if(is(a(n,k,r)),return(0)));1
+c(n)=for(k=1,2^48,if(b(k,n),return(k)))

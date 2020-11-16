@@ -1,0 +1,1 @@
+a(n,k,b)=v=[];for(r=1,length(digits(n,b)),if(r+length(digits(k,2))-length(digits(n,b))>0 && digits(k,2)[r+length(digits(k,2))-length(digits(n,b))]==1,v=concat(v,digits(n,b)[r])));fromdigits(v,b)

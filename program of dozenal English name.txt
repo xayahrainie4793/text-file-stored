@@ -1,0 +1,7 @@
+English(n, pot=[12^39, "dozillion", 12^36, "elpillion", 12^33, "dekrillion", 12^30, "nonillion", 12^27, "octillion", 12^24, "septillion", 12^21, "sextillion", 12^18, "quintillion", 12^15, "quadrillion", 12^12, "trillion", 12^9, "billion", 12^6, "million", 1728, "thousand", 144, "hundred"])={ n>143 && forstep( i=1, #pot, 2, n<pot[i] && next; n=divrem(n, pot[i]); n[1]>1727 && error("n >= 1728 ", pot[2], " not yet implemented");
+
+return( Str( English(n[1]), " ", pot[i+1], if( n[2], Str(" ", English(n[2])), ""))));
+
+if( n<12, ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "dek", "el"][n+1],
+
+  Str(["onety", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety", "dekty", "elty"][n\12], if( n%12, Str("-", English(n%12)), "")))}

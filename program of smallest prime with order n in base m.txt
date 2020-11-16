@@ -1,0 +1,4 @@
+a(m,n)=forprime(p=2,2^24,if(gcd(m,p)==1 && znorder(Mod(m,p))==(p-1)/n,return(p)))
+is(m,n)=p=core(m);if(p>1 && p%4==1 && n%p==0 && n%2,return(1));0
+b(m,n)=if(is(m,n) || (issquare(m) && n%2 && (m%2==0 || n>1)),0,a(m,n))
+for(m=2,128,print1("|", m);for(n=1,128,print1("||", b(m,n)));print();print1("|-");print())

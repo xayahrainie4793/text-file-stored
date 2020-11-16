@@ -1,0 +1,7 @@
+a(k,b)=for(n=1,2^12,if(ispseudoprime((k*b^n-1)/gcd(k-1,b-1)),return(n)))
+is(n)=forprime(p=2,50000,if(n%p==0,return(0)));1
+iss(k,b)=for(n=1,5000,if(is((k*b^n-1)/gcd(k-1,b-1)),return(0)));1
+isss(k,b)=forprime(r=2,16,if(ispower(k,r) && ispower(b,r),return(1)));0
+issss(k,b)=forprime(p=5,1024,if((issquare(k) && k%p==p-1 && b%p==p-1) || (issquare(k*b) && (k*b)%p==p-1 && b%p==p-1),return(1)));0
+isssss(k,b)=for(r=3,16,if((issquare(k) && k%(2^r)==2^(r-1)+1 && b%(2^r)==2^(r-1)+1) || (issquare(k*b) && (k*b)%(2^r)==2^(r-1)+1 && b%(2^r)==2^(r-1)+1),return(1)));0
+c(k,b)=if(iss(k,b),"covering set",if(isss(k,b),"full algebra factors",if(issss(k,b) || isssss(k,b),"partial algebra factors",a(k,b))))

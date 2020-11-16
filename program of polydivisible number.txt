@@ -1,0 +1,1 @@
+b(n)=if(n==1,[1,2,3,4,5,6,7,8,9,10,11],my(v=[]);my(c=b(n-1));for(j=1,length(c),for(k=0,11,if((12*c[j]+k)%n==0,v=concat(v,12*c[j]+k))));v)

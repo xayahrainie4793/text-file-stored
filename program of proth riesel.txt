@@ -1,0 +1,5 @@
+a(n)=for(k=1,4096,if(ispseudoprime(n*2^k+1),print1(k, ", ")))
+b(n)=for(k=1,4096,if(ispseudoprime(n*2^k-1),print1(k, ", ")))
+c(n)=for(k=1,4096,if(ispseudoprime(2^k+n),print1(k, ", ")))
+d(n)=for(k=1,4096,if(ispseudoprime(abs(2^k-n)),print1(k, ", ")))
+e(n)=print1(n, ", ", "Proth"); print1(": ");a(n);print();print1(n, ", ", "Riesel"); print1(": ");b(n);print();print1(n, ", ", "Proth dual"); print1(": ");c(n);print();print1(n, ", ", "Riesel dual"); print1(": ");d(n);print()

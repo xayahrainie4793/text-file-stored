@@ -1,0 +1,1 @@
+z(m)=for(n=1, 600, my(S=[], r=(m^n-1)/(m-1)); for(a=1, (m-1)^(n>1), for(b=if(n>2, 1-a), m-1-a, for(j=0, if(b, n-1), ispseudoprime(a*r+b*m^j)||next(2)); S=concat(S, vector(if(b, n, 1), k, a*r+m^(k-1)*b)))); apply(t->printf(t", "), Set(S)))

@@ -1,0 +1,9 @@
+a(n)=fromdigits(vecsort(digits(n,12)),12)
+b(n)=fromdigits(vecsort(digits(n,12),,4),12)
+z(n)=for(k=1,length(digits(n,12)),print1(["0","1","2","3","4","5","6","7","8","9","X","E"][digits(n,12)[k]+1]))
+dig(n) = {local(m=n, r=[]); while(m>0, r=concat(m%12, r); m=floor(m/12)); r}
+c(n) = {local(b, m, r); r=0; b=1; m=dig(n); for(i=1, matsize(m)[2], r=r+b*m[i]; b=b*12); r}
+d(n,k)=b(n)*12^(k-length(digits(b(n),12)))-a(n)
+e(n)=n+c(n)
+f(n)=r=n;for(k=1,144,for(j=length(digits(r,12))+1,length(digits(n,12)),print1("0"));z(r);print1(", ");r=d(r,length(digits(n,12))))
+g(n)=r=e(n);for(k=1,1728,if(r != c(r),r=e(r),return(k+1)))
