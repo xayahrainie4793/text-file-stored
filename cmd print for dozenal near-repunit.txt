@@ -1,0 +1,51 @@
+C:\Users\user\OneDrive\桌面\dozenal PRP>srsieve -m 429981696 -n 1729 -N 248832 -p 13 -P 429981696 k.txt
+srsieve 0.6.17 -- A sieve for integer sequences in n of the form k*b^n+c.
+Read 78 sequences from input file `k.txt'.
+srsieve started: 1729 <= n <= 248832, 13 <= p <= 429981696
+Split 78 base 12 sequences into 446 base 12^6 subsequences.
+WARNING: 4*12^n-1 has algebraic factors.
+WARNING: 4*12^n-1 has algebraic factors.
+WARNING: 4*12^n-1 has algebraic factors.
+WARNING: 9*12^n-1 has algebraic factors.
+WARNING: 9*12^n-1 has algebraic factors.
+WARNING: 9*12^n-1 has algebraic factors.
+WARNING: 100*12^n-1 has algebraic factors.
+WARNING: 100*12^n-1 has algebraic factors.
+WARNING: 100*12^n-1 has algebraic factors.
+p=8620841, 143551 p/sec, 15539984 terms eliminated, 3734128 remain
+p=19700767, 184751 p/sec, 15725114 terms eliminated, 3548998 remain
+p=31260763, 192362 p/sec, 15820977 terms eliminated, 3453135 remain
+p=42700841, 191091 p/sec, 15882616 terms eliminated, 3391496 remain
+p=53980807, 187861 p/sec, 15927662 terms eliminated, 3346450 remain
+p=63820807, 164041 p/sec, 15959112 terms eliminated, 3315000 remain
+p=74940751, 185011 p/sec, 15988812 terms eliminated, 3285300 remain
+p=87060817, 202473 p/sec, 16015520 terms eliminated, 3258592 remain
+p=99300779, 203527 p/sec, 16038778 terms eliminated, 3235334 remain
+p=110380867, 184899 p/sec, 16057255 terms eliminated, 3216857 remain
+p=122420737, 200263 p/sec, 16075234 terms eliminated, 3198878 remain
+p=134740783, 205385 p/sec, 16091646 terms eliminated, 3182466 remain
+p=147460801, 212379 p/sec, 16106861 terms eliminated, 3167251 remain
+p=160300843, 213833 p/sec, 16121286 terms eliminated, 3152826 remain
+p=173180827, 214673 p/sec, 16134081 terms eliminated, 3140031 remain
+p=186100793, 215462 p/sec, 16146189 terms eliminated, 3127923 remain
+p=199060793, 216108 p/sec, 16157314 terms eliminated, 3116798 remain
+p=212100841, 217051 p/sec, 16167604 terms eliminated, 3106508 remain
+p=224820793, 212285 p/sec, 16177182 terms eliminated, 3096930 remain
+p=237700763, 214666 p/sec, 16186167 terms eliminated, 3087945 remain
+p=250860809, 218852 p/sec, 16194925 terms eliminated, 3079187 remain
+p=263980901, 218817 p/sec, 16203036 terms eliminated, 3071076 remain
+p=277180829, 220417 p/sec, 16210820 terms eliminated, 3063292 remain
+p=290460761, 220923 p/sec, 16218225 terms eliminated, 3055887 remain
+p=303740779, 221425 p/sec, 16225388 terms eliminated, 3048724 remain
+p=317060743, 221796 p/sec, 16232095 terms eliminated, 3042017 remain
+p=330380851, 222057 p/sec, 16238498 terms eliminated, 3035614 remain
+p=343740763, 222854 p/sec, 16244740 terms eliminated, 3029372 remain
+p=357140737, 223429 p/sec, 16250653 terms eliminated, 3023459 remain
+p=370580741, 223862 p/sec, 16256371 terms eliminated, 3017741 remain
+p=384020773, 223952 p/sec, 16261937 terms eliminated, 3012175 remain
+p=397460737, 224369 p/sec, 16267185 terms eliminated, 3006927 remain
+p=410980783, 224828 p/sec, 16272357 terms eliminated, 3001755 remain
+p=423660817, 211404 p/sec, 16277043 terms eliminated, 2997069 remain
+Sieving 13 <= p <= 429981696 eliminated 16279303 terms, 2994809 remain.
+Wrote 2994809 terms for 78 sequences to srsieve format file `srsieve.out'.
+srsieve stopped: at p=429981696 because --pmax was reached.
